@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementing Calcualtor using html css and javascript</title>
+    <link rel="stylesheet" href="Calculator.css">
+    <script>
+        function buttonFunction(val){
+            form.display.value+=val;
+        }
+        function equal(){
+            form.display.value=eval(form.display.value);
+        }
+        function clearscr(){
+            form.display.value='';
+        }
+    </script>
+</head>
+<body>
+    <div align="center" class="calculator">
+        <form name="form">
+            <input name="display" type="text" class="display" value="" placeholder="0">
+            <div class="buttons">
+                <div class="row">
+                    <button type="button" value="1" onclick="buttonFunction(this.value)">1</button>
+                    <button type="button" value="2" onclick="buttonFunction(this.value)">2</button>
+                    <button type="button" value="3" onclick="buttonFunction(this.value)">3</button>
+                    <button type="button" value="+" onclick="buttonFunction(this.value)">+</button>
+                </div>
+                <div class="row">
+                    <button type="button" value="4" onclick="buttonFunction(this.value)">4</button>
+                    <button type="button" value="5" onclick="buttonFunction(this.value)">5</button>
+                    <button type="button" value="6" onclick="buttonFunction(this.value)">6</button>
+                    <button type="button" value="-" onclick="buttonFunction(this.value)">-</button>
+                </div>
+                <div class="row">
+                    <button type="button" value="7" onclick="buttonFunction(this.value)">7</button>
+                    <button type="button" value="8" onclick="buttonFunction(this.value)">8</button>
+                    <button type="button" value="9" onclick="buttonFunction(this.value)">9</button>
+                    <button type="button" value="*" onclick="buttonFunction(this.value)">*</button>
+                </div>
+                <div class="row">
+                    <button type="button" value="=" onclick="equal()">=</button>
+                    <button type="button" value="C" onclick="clearscr()">C</button>
+                    <button type="button" value="0" onclick="buttonFunction(this.value)">0</button>
+                    <button type="button" value="/" onclick="buttonFunction(this.value)">/</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
